@@ -1,73 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <phyphox version="1.10">
 
-<title>Nano_Joël Temperature</title>
-<category>Arduino</category>
-<description>DS18B20 Temperature vs Time</description>
+    <title>Nano_Joël Temperature</title>
+    <category>Arduino</category>
+    <description>DS18B20 temperature measurement</description>
 
-<data-containers>
+    <data-containers>
+        <container size="1000">time</container>
+        <container size="1000">temperature</container>
+    </data-containers>
 
-    <container size="1000">
-        time
-    </container>
+    <views>
 
-    <container size="1000">
-        temperature
-    </container>
+        <view label="Temperature">
 
-</data-containers>
+            <graph label="Temperature vs Time">
 
+                <x>time</x>
+                <y>temperature</y>
 
-<inputs>
+                <labelX>Time (s)</labelX>
+                <labelY>Temperature (°C)</labelY>
 
-    <bluetooth>
+            </graph>
 
-        <input
-            rate="10"
-            datatype="float"
-            id="time">
-            time
-        </input>
+        </view>
 
-        <input
-            rate="10"
-            datatype="float"
-            id="temperature">
-            temperature
-        </input>
-
-    </bluetooth>
-
-</inputs>
-
-
-<views>
-
-<view label="Temperature">
-
-<graph label="Temperature vs Time">
-
-<x>
-time
-</x>
-
-<y>
-temperature
-</y>
-
-<labelX>
-Time (s)
-</labelX>
-
-<labelY>
-Temperature (°C)
-</labelY>
-
-</graph>
-
-</view>
-
-</views>
+    </views>
 
 </phyphox>
