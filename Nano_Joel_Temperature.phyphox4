@@ -8,6 +8,20 @@
     <container size="1000">temperature</container>
 </data-containers>
 
+<inputs>
+
+    <input>
+        <bluetooth name="time"/>
+        <output>time</output>
+    </input>
+
+    <input>
+        <bluetooth name="temperature"/>
+        <output>temperature</output>
+    </input>
+
+</inputs>
+
 <views>
 
     <view label="Temperature">
@@ -16,6 +30,9 @@
 
             <input axis="x">time</input>
             <input axis="y">temperature</input>
+
+            <labelX>Time (s)</labelX>
+            <labelY>Temperature (°C)</labelY>
 
         </graph>
 
