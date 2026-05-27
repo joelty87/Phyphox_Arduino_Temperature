@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phyphox version="1.1">
+
+    <title>External Temperature</title>
+
+    <data-containers>
+        <data id="time" name="Time"/>
+        <data id="temp" name="Temperature"/>
+    </data-containers>
+
+    <input>
+        <bluetooth name="Nano_Joël">
+            <output index="0" conversion="float" target="time"/>
+            <output index="1" conversion="float" target="temp"/>
+        </bluetooth>
+    </input>
+
+    <views>
+
+        <view label="Temperature">
+
+            <graph label="DS18B20 Temperature">
+                <x label="Time (s)" ref="time"/>
+                <y label="Temperature (°C)" ref="temp"/>
+            </graph>
+
+            <value label="Current Temperature">
+                <input ref="temp"/>
+            </value>
+
+        </view>
+
+    </views>
+
+</phyphox>
