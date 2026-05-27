@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phyphox version="1.10">
+
+<title>Nano_Joël Temperature</title>
+
+<data-containers>
+    <container size="1000">time</container>
+    <container size="1000">temperature</container>
+</data-containers>
+
+<views>
+    <view label="Temperature">
+
+        <graph label="Temperature vs Time">
+
+            <input axis="x" source="time"/>
+            <input axis="y" source="temperature"/>
+
+        </graph>
+
+    </view>
+</views>
+
+</phyphox>
