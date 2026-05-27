@@ -10,8 +10,15 @@
 <views>
 <view label="Temperature">
 <graph label="Temperature vs Time">
-<x>time</x>
-<y>temperature</y>
+
+    <input axis="x">
+        <source>time</source>
+    </input>
+
+    <input axis="y">
+        <source>temperature</source>
+    </input>
+
 </graph>
 </view>
 </views>
