@@ -9,16 +9,18 @@
 </data-containers>
 
 <views>
+
     <view label="Temperature">
 
         <graph label="Temperature vs Time">
 
-            <input axis="x" source="time"/>
-            <input axis="y" source="temperature"/>
+            <input axis="x">time</input>
+            <input axis="y">temperature</input>
 
         </graph>
 
     </view>
+
 </views>
 
 </phyphox>
